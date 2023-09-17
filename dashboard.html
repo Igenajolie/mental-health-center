@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard - Mental Health Center</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff; /* Light Blue */
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #0074cc; /* Dark Blue */
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 36px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .dashboard-item {
+            background-color: #e6f7ff; /* Lighter Blue */
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 5px;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: #0074cc;
+            color: #fff;
+            font-size: 20px;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .cta-button:hover {
+            background-color: #005baa; /* Slightly darker blue on hover */
+        }
+        h1 {
+            font-size: 36px;
+        }
+        .menu-icon {
+            display: none;
+            cursor: pointer;
+            color: #fff;
+            font-size: 24px;
+            margin-right: 20px;
+        }
+        .menu-icon:hover {
+            color: #eee;
+        }
+        .menu {
+            display: flex;
+            justify-content: flex-end;
+            list-style-type: none;
+            padding: 0;
+        }
+        .menu li {
+            margin-right: 20px;
+        }
+        .menu a {
+            color: #0074cc;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        </style>
+        <body>
+    <header>
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        <h1>User Dashboard</h1>
+        <p>Welcome, [Username]!</p>
+    </header>
+    <ul class="menu" id="dashboardMenu">
+        <li><a href="education.html">education</a></li>
+        <li><a href="html.html"> schedule Appointments</a></li>
+        <li><a href="#">Resources</a></li>
+        <li><a href="landing page1.html">log out</a></li>
+    </ul>
+    <div class="container">
+        
+        <h2>My Dashboard</h2>
+        <div class="dashboard-item">
+            <h3>Appointments</h3>
+            <p>You have an upcoming appointment with your therapist on [Date].</p>
+            <a href="#" class="cta-button">View Appointments</a>
+        </div>
+        <div class="dashboard-item">
+            <h3>Resources</h3>
+            <p>Explore our mental health resources and articles to support your well-being.</p>
+            <a href="#" class="cta-button">Explore Resources</a>
+        </div>
+        <div class="dashboard-item">
+            <h3>Messages</h3>
+            <p>You have new messages from your therapist. <a href="#">Read Messages</a></p>
+        <!-- Dashboard content here -->
+    </div>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("dashboardMenu");
+            if (menu.style.display == "block") {
+                menu.style.display = "none";
+            } else {
+                menu.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>
